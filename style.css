@@ -521,11 +521,11 @@ text-align: right;
 }
 
 
-.textCenter{
+/* .textCenter{
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-}
+} */
 
 
 
