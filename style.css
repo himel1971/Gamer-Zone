@@ -388,7 +388,7 @@ text-align: right;
   max-width: 1200px;
 }
 /* * --------------- game type section end   ------------- * */
-
+/* footer starts */
 .foot{
   height: 636px;
   background: #0B0223;
@@ -435,11 +435,97 @@ text-align: right;
 }
 
 
+/*  * --------------------------------------------- * */
+.videoCardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(242px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.videoCard {
+  position: relative;
+  width: 242px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.videoCard img {
+  width: 100%;
+  height: 70%; /* Adjust the height of the image as per your requirement */
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.videoCard p {
+  margin: 40px 0 0 0;
+  color: #534C64;
+  text-align: left;
+}
+
+.videoCard .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 74%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.videoCard:hover img {
+  transform: scale(1.1);
+}
+
+.videoCard:hover .overlay {
+  opacity: 1;
+}
+
+.playIcon {
+  width: 50px;
+  height: 50px;
+  border-left: 20px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 30px solid #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.videoCard:hover .playIcon {
+  opacity: 1;
+}
+/*  * --------------------------------------------- * */
+.paddingY {
+  padding: 100px 0;
+}
+
+.gameVideoTextContainer h4 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.gameVideoTextContainer p {
+  margin: 0;
+  color: #534c64;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
 
 
-
-
-
+.textCenter{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
 
 
 
@@ -529,7 +615,7 @@ margin-top: 700px;
 }
 
 
-.foot-a, .foot-svg,.foot-link{
+.foot-a , .foot-svg , .foot-link{
   flex-wrap: wrap;
   margin: 0 auto;
   text-align: center;
