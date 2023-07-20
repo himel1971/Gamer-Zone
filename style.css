@@ -6,6 +6,7 @@
 body {
   font-family: "Work Sans", sans-serif;
   margin: 0 auto;
+  overflow-x: hidden;
 
 }
 .global-padding{
@@ -177,7 +178,9 @@ nav{
 /* Hero section Ends */
 
 /* feature box starts */
-
+..feature-box{
+  margin-top: 10px;
+}
 .feature-mother{
   display: flex;
   align-items: center;
@@ -219,6 +222,9 @@ text-align: right;
 
 }
 
+.faeture-left{
+  margin-right: 80px;
+}
 .feature-right{
   margin-left: 120px;
   margin-top: 220px;
@@ -256,6 +262,7 @@ text-align: right;
 }
 .left{
   margin-left: 10%;
+  
 }
 .left h1{
   color: #FFF;
@@ -311,10 +318,80 @@ text-align: right;
   background: #FFF;
 
 }
+.feature-img img{
+  height: 90%;
+  margin-left: 90px;
+}
 
+.badge img{
+  width: 318.5px;
+  height: 365.083px;
+  border-radius: 8px;
+  background: url(images/Rectangle\ 66.png), lightgray 0px -0.304px / 100% 117.229% no-repeat;
 
+  text-align: center;
+  position: relative;
+  bottom: 260px;
+    right: 114px;
 
+}
 
+/* * --------------- game type section start ------------- * */
+.gametypeContainer {
+  /* background-color: red; */
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+}
+
+.flex {
+  padding: 30px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.actionButton {
+  padding: 10px 14px;
+  /* background-color: #fff; */
+  color: #0b0223;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #ffffff;
+  outline: none;
+  border-radius: 1000px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.actionButton:hover {
+  color: #f948b2;
+  border: 1px solid #f948b2;
+}
+
+.actionButton img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+/* * --------------- game type section end   ------------- * */
+
+.foot{
+  height: 636px;
+  background: #0B0223;
+}
 
 
 
@@ -344,7 +421,7 @@ text-align: right;
 @media screen and (max-width: 576px) {
   /* Mobile styles */
   nav,   .links, .hero,
-  .feature-mother
+  .feature-mother ,
   .mother{
     flex-direction: column;
   }
@@ -403,7 +480,16 @@ margin-top: 700px;
  margin-top: 700px;
 }
 
+.feature-img img{
+  width: 135%;
+    margin-left: 11px;
+    height: auto;
 
+}
+.badge img{
+  position: static;
+  max-width: 300px;
+}
 
 
 
